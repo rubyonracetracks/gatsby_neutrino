@@ -30,20 +30,24 @@ if [ -d "$DIR_APP" ]; then
   rm -rf $DIR_APP
 fi
 
-echo '-----------------'
-echo "mkdir -p $DIR_APP"
-mkdir -p $DIR_APP
+echo '--------------------------'
+echo 'yarn global add gatsby-cli'
+yarn global add gatsby-cli
 
-# Creating the new Docusaurus app
-echo '----------------------------------'
-echo "cd $DIR_APP && npx docusaurus-init"
-cd $DIR_APP && npx docusaurus-init
-cd $DIR_MAIN
+echo '#########################################################################################'
+echo "BEGIN: gatsby new $APP_NAME https://github.com/billyjacoby/gatsby-react-bootstrap-starter"
+echo '#########################################################################################'
+gatsby new $APP_NAME https://github.com/billyjacoby/gatsby-react-bootstrap-starter
 wait
+echo '############################################################################################'
+echo "FINISHED: gatsby new $APP_NAME https://github.com/billyjacoby/gatsby-react-bootstrap-starter"
+echo '############################################################################################'
 
 # WICHTIG/LEGACY/bash: Adding nukec.sh and nuke.sh
 cp $DIR_MAIN/nukec.sh $DIR_APP
 cp $DIR_MAIN/nuke.sh $DIR_APP
+
+exit 0
 
 # Add the mod directory and mod scripts to .gitignore
 echo '' >> $DIR_APP/.gitignore
