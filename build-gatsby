@@ -5,7 +5,7 @@ APP_NAME=$1
 
 DIR_MAIN=$PWD
 
-DIR_APP=$DIR_MAIN/new_apps/$APP_NAME
+DIR_APP=$DIR_MAIN/$APP_NAME
 
 echo '-------'
 echo 'node -v'
@@ -34,14 +34,16 @@ echo '--------------------------'
 echo 'yarn global add gatsby-cli'
 yarn global add gatsby-cli
 
-echo '#########################################################################################'
-echo "BEGIN: gatsby new $APP_NAME https://github.com/billyjacoby/gatsby-react-bootstrap-starter"
-echo '#########################################################################################'
-gatsby new $APP_NAME https://github.com/billyjacoby/gatsby-react-bootstrap-starter
+echo '#############################################################################################'
+echo "BEGIN: npx gatsby new $APP_NAME https://github.com/billyjacoby/gatsby-react-bootstrap-starter"
+echo '#############################################################################################'
+# Automatically selecting NPM instead of Yarn.
+# Reason: Selecting NPM for Gatsby works for me.  Yarn doesn't.
+echo -ne '\t\n' | npx gatsby new $APP_NAME https://github.com/billyjacoby/gatsby-react-bootstrap-starter
 wait
-echo '############################################################################################'
-echo "FINISHED: gatsby new $APP_NAME https://github.com/billyjacoby/gatsby-react-bootstrap-starter"
-echo '############################################################################################'
+echo '################################################################################################'
+echo "FINISHED: npx gatsby new $APP_NAME https://github.com/billyjacoby/gatsby-react-bootstrap-starter"
+echo '################################################################################################'
 
 # WICHTIG/LEGACY/bash: Adding nukec.sh and nuke.sh
 cp $DIR_MAIN/nukec.sh $DIR_APP
