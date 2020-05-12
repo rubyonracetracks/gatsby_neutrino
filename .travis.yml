@@ -1,6 +1,0 @@
-before_script:
-  - sudo apt-get install -y bash
-
-script:
-  - $PWD/build-docu 'tmp1'
-  - bash travis-after.sh
