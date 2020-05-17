@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
 
-echo '----------'
-echo 'yarn audit'
-docker-compose run --rm docusaurus yarn audit
+echo '---------'
+echo 'npm audit'
+docker-compose run --rm gatsby npm audit

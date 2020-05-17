@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
 
-echo '-------------'
-echo 'yarn install'
-docker-compose run --rm docusaurus yarn install
+echo '-----------'
+echo 'npm install'
+docker-compose run --rm gatsby npm install

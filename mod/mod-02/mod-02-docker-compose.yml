@@ -1,15 +1,14 @@
 version: "3"
 
 services:
-  docusaurus:
+  gatsby:
     build: .
     ports:
-      - 3000:3000
-      - 35729:35729
+      - 8000:8000
     volumes:
       - .:/home/node/neutrino
     working_dir: /home/node/neutrino/website
     user: node
     command:
-      - yarn
-      - start
+      - npm
+      - server
