@@ -13,7 +13,3 @@ npm install
 echo '--------------------'
 echo 'npm run-script build'
 npm run-script build
-
-echo '------------'
-echo 'npm outdated'
-npm outdated
