@@ -6,18 +6,18 @@ set -e
 
 cd new_apps/tmp1/website
 
+echo '-----------'
+echo 'npm install'
+npm install
+
+echo '--------------------'
+echo 'npm run-script build'
+npm run-script buildd
+
+echo '---------'
+echo 'npm audit'
+npm audit
+
 echo '------------'
-echo 'yarn install'
-yarn install
-
-echo '--------------'
-echo 'yarn run build'
-yarn run build
-
-echo '----------'
-echo 'yarn audit'
-yarn audit
-
-echo '-------------'
-echo 'yarn outdated'
-yarn outdated
+echo 'npm outdated'
+npm outdated
