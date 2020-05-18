@@ -12,7 +12,7 @@ npm install
 
 echo '--------------------'
 echo 'npm run-script build'
-npm run-script buildd
+npm run-script build
 
 echo '---------'
 echo 'npm audit'
