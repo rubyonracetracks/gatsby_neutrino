@@ -14,10 +14,6 @@ echo '--------------------'
 echo 'npm run-script build'
 npm run-script build
 
-echo '---------'
-echo 'npm audit'
-npm audit
-
 echo '------------'
 echo 'npm outdated'
 npm outdated
