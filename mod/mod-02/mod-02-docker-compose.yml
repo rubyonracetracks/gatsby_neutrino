@@ -9,6 +9,4 @@ services:
       - .:/home/node/neutrino
     working_dir: /home/node/neutrino/website
     user: node
-    command:
-      - npm
-      - server
+

@@ -2,12 +2,11 @@
 
 bin/dinstall
 
-echo '-----------------'
-echo 'docker-compose up'
+echo '---------'
+echo 'npm start'
+bash exec.sh npm start
 echo ''
-echo 'About to run your new Docusaurus app on the local server'
-echo 'You will be able to view your app in your browser at the following URLs:'
-echo 'Docusaurus web server: http://localhost:3000'
-echo 'LiveReload web server: http://localhost:35729'
+echo 'NOTE:'
+echo 'When the server is running, open your browser to the NETWORK URL.'
+echo 'The local URL (localhost) does NOT WORK.'
 echo ''
-docker-compose up

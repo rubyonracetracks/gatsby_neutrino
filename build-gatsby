@@ -30,6 +30,8 @@ if [ -d "$DIR_APP" ]; then
   rm -rf $DIR_APP
 fi
 
+# Using Yarn to install Gatsby
+# Reason: Installing Gatsby with Yarn works for me.  NPM doesn't.
 echo '--------------------------'
 echo 'yarn global add gatsby-cli'
 yarn global add gatsby-cli

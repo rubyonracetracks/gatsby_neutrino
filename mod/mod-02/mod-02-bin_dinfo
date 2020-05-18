@@ -9,6 +9,10 @@ echo '-------------'
 echo 'npm --version'
 docker-compose run --rm gatsby npm --version
 
+echo '--------------------'
+echo 'npx gatsby --version'
+docker-compose run --rm gatsby npx gatsby --version
+
 echo '-------------------'
 echo 'cat /etc/os-release'
 docker-compose run --rm gatsby cat /etc/os-release
