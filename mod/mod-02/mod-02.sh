@@ -13,7 +13,6 @@ mv mod-02-docker-compose.yml docker-compose.yml
 
 mkdir bin
 mv mod-02-bin_daudit bin/daudit
-mv mod-02-bin_dbuild bin/dbuild
 mv mod-02-bin_dexec bin/dexec
 mv mod-02-bin_dinfo bin/dinfo
 mv mod-02-bin_dinstall bin/dinstall

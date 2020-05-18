@@ -1,4 +1,4 @@
 #!/bin/bash
 
 bin/dinstall
-bin/dbuild
+bin/dtest
