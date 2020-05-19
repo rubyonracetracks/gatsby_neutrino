@@ -7,6 +7,6 @@ services:
       - 8000:8000
     volumes:
       - .:/home/node/neutrino
-    working_dir: /home/node/neutrino/website
+    working_dir: /home/node/neutrino
     user: node
 
