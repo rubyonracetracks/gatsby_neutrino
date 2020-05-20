@@ -1,6 +1,6 @@
 # Welcome
 
-This app was created with the aid of Docusaurus Neutrino, which automatically creates a new Docusaurus app from scratch.  It's like Rails Neutrino but for Docusaurus instead.
+This app was created with the aid of Gatsby Neutrino, which automatically creates a new Gatsby app from scratch.  It's like Rails Neutrino but for Gatsby instead.
 
 ## Setup Procedure
 * Open your terminal.
@@ -11,7 +11,7 @@ This app was created with the aid of Docusaurus Neutrino, which automatically cr
 
 ## Other Important Commands
 * `bash nuke.sh`: This command deletes all Docker images and containers.  It's handy for resetting your Docker setup.
-* `bash clean.sh`: This command removes the "website/build", "website/i18n", and "website/node_modules" directories.  This is handy for searching for a certain string in your source code.
+* `bash clean.sh`: This command removes the "public", ".cache", and "node_modules" directories.  This is handy for searching for a certain string in your source code.
 * `bash git_check.sh`: Before you use the "git add" and "git commit" commands, run the git_check.sh script to make sure that all tests pass.
 * `bash exec.sh *`: Add the command "bash exec.sh" to the beginning of any command in order to execute it within the Docker container (instead of the host OS).
 * `bash root.sh *`: Enter the Docker container as root.
