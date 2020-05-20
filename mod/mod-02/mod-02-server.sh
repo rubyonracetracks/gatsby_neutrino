@@ -1,6 +1,7 @@
 #!/bin/bash
 
 bin/dinstall
+bin/dtest
 
 echo '---------'
 echo 'npm start'
