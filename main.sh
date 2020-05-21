@@ -10,7 +10,7 @@ read DIR_NAME
 
 if [ -z "$DIR_NAME" ]; then
   DATE=`date +%Y%m%d-%H%M%S-%3N`
-  DIR_NAME="docu-$DATE"
+  DIR_NAME="gatsby-$DATE"
 fi
 
 DIR_APP=$PWD/new_apps/$DIR_NAME
